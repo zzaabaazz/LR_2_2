@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+  <phone>
+    <Model>Саша</Model>
+    <Brand>1grit</Brand>
+    <Specs>cool</Specs>
+    <Price>1</Price>
+  </phone>
+  <phone>
+    <Model>Дима</Model>
+    <Brand>1grit</Brand>
+    <Specs>nice</Specs>
+    <Price>1</Price>
+  </phone>
+  <phone>
+    <Model>Рита</Model>
+    <Brand>1grit</Brand>
+    <Specs>awful</Specs>
+    <Price>999,99</Price>
+  </phone>
+</catalog>

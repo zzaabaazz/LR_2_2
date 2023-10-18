@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--XML заголовок-->
+<catalog>
+	<!--Корневой элемент-->
+	<phone>
+		<!--Элемент данных-->
+		<name>Саша</name>
+		<!--Первое значение данных-->
+		<number>890953317</number>
+		<!--Второе значение-->
+		<remark>Друг</remark>
+		<!--Третье значение-->
+	</phone>
+	<!--Закрытие элемента данных-->
+	<phone>
+		<name>Дима</name>
+		<number>890512309</number>
+		<remark>Босс</remark>
+	</phone>
+	<phone group="important">
+		<!--Используем атрибут для дополнительного свойства-->
+		<name>Рита</name>
+		<number>890198735</number>
+		<remark>Парикмахер</remark>
+	</phone>
+</catalog>
+<!--Завершение всех данных-->
