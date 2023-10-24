@@ -1,20 +1,24 @@
-﻿using System.Numerics;
+using System;
+using System.Collections.Generic;
+using System.Numerics;
 using System.Text;
 using System.Xml;
 using XML;
-namespace LR_2_2
+namespace ConsoleApp2_2
 {
     class Program
     {
-
+        
         static void Main(string[] args)
         {
+            string input = "C:\\Users\\zaz\\source\\repos\\ConsoleApp2_2\\ConsoleApp2_2\\example.xml";
+            string output = "C:\\Users\\zaz\\source\\repos\\ConsoleApp2_2\\ConsoleApp2_2\\example1.xml";
             // Устанавливаем кодировку консоли.
             // Нужно только если при использовании англоязычной Windows
             // на консоль вместо кириллицы выводятся знаки вопроса
             Console.OutputEncoding = Encoding.Unicode;
             // Читаем Xml файл.
-            ReadXmlFile("C:\\Users\\stud034163\\source\\repos\\LR_2_2\\LR_2_2\\example.xml");
+            ReadXmlFile(input);
             // Ждем ввода пользователя.
             Console.ReadLine();
             // Создаем структуру данных.
@@ -22,13 +26,13 @@ namespace LR_2_2
             {
                 Phones = new List<Phone>() // Коллекция номеров телефонов.
         {
- new Phone() {Model = "Саша", Brand = "1grit" , Specs = "cool", Price = 1}, // Запись номера телефона.
+ new Phone() {Model = "Саша", Brand = "1grit" , Specs = "cool", Price = 1},
  new Phone() {Model = "Дима", Brand = "1grit", Specs = "nice", Price = 1},
- new Phone() {Model = "Рита", Brand = "1grit", Specs = "awful", Price = 999.99}
+ new Phone() {Model = "Рита", Brand = "1grit", Specs = "awful", Price = 978.99}
  }
             };
             // Пишем в файл.
-            WriteXmlFile("C:\\Users\\stud034163\\source\\repos\\LR_2_2\\LR_2_2\\result.xml", catalog);
+            WriteXmlFile(output, catalog);
             // Сообщаем пользователю о завершении.
             Console.WriteLine("ОК");
             Console.ReadLine();
